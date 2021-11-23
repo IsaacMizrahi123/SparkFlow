@@ -1,0 +1,12 @@
+name = "sparkflow_worker"
+type = "webpack"
+
+account_id = "089d692d5ad866a0f23819961fd91b1c"
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2021-11-23"
+webpack_config = "webpack.config.js"
+kv_namespaces = [
+    { binding = "FILES", preview_id = "2ae59ca7071749458cf9c8d741439964" }
+]
