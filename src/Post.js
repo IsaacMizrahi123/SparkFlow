@@ -3,9 +3,13 @@ const Post = async (req) => {
 	const { params } = req
 	const post = await FILES.get(params.id)
 	console.log({ post })
-	return new Response(post, {
-  		headers: { 'content-type': 'application/json' },
-	})
+	const res = JSON.stringify(post)
+	console.log({ res })
+	const headers = {
+    	'Access-Control-Allow-Origin': '*',
+    	'Content-type': 'application/json'
+  	}
+	return new Response(post, { headers })
 	
 }
 

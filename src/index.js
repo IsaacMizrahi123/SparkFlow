@@ -7,7 +7,8 @@ import deletePost from './deletePost'
 const router = Router()
 
 router.get('/', () => new Response(`hello`, {
-  headers: { 'content-type': 'text/html' },
+  headers: { 'Access-Control-Allow-Origin': '*', 
+              'content-type': 'text/html' },
 })
 )
 
